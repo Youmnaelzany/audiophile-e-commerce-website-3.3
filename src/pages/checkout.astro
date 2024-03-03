@@ -1,0 +1,148 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
+import Header from "../components/Header.astro";
+import Footer from "@/components/Footer.astro";
+---
+
+<Layout title="Frontend Mentor | Audiophile e-commerce website">
+  <!-- Header -->
+  <Header />
+  <main class="bg-[#F1F1F1]">
+    <!-- Go Back Link -->
+    <section
+      class="mx-6 mb-8 mt-4 md:mx-10 md:mb-6 md:mt-[2.06rem] lg:mx-[10.31rem] lg:mb-14 lg:mt-[4.94rem]"
+    >
+      <a
+        href="/"
+        class="text-[0.9375rem] font-normal leading-[1.5625rem] text-[#000] opacity-50"
+        >Go Back
+      </a>
+    </section>
+    <!-- Checkout -->
+    <section
+      class="mx-6 flex flex-col gap-8 rounded-lg bg-[#fff] p-6 md:mx-10 md:px-[1.75rem] md:py-[1.87rem] lg:mx-[10.31rem] lg:px-12 lg:py-[3.37rem]"
+    >
+      <h2
+        class="md:max:xl:tracking-[0.07144rem] text-[1.75rem] font-bold uppercase leading-normal tracking-[0.0625rem] text-[#000] md:max-xl:text-[2rem] md:max-xl:leading-[2.25rem]"
+      >
+        CHECKOUT
+      </h2>
+      <div class="grid grid-cols-1">
+        <h3
+          class="text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.05806rem] text-[#D87D4A]"
+        >
+          Billing details
+        </h3>
+        <form action="" method="get" class="grid grid-cols-1 gap-6">
+          <label for="name" class="grid grid-cols-1 gap-[0.56rem]"
+            >Name<input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Alexei Ward"
+            /></label
+          >
+          <label for="email" class="grid grid-cols-1 gap-[0.56rem]"
+            >Email Address<input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="alexei@mail.com"
+            /></label
+          >
+          <label for="tel" class="grid grid-cols-1 gap-[0.56rem]"
+            >Phone Number<input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="+1 202-555-0136"
+            /></label
+          >
+        </form>
+      </div>
+      <div class="grid grid-cols-1">
+        <h3
+          class="text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.05806rem] text-[#D87D4A]"
+        >
+          shipping info
+        </h3>
+        <form action="" method="get" class="grid grid-cols-1 gap-6">
+          <label for="address" class="grid grid-cols-1 gap-[0.56rem]"
+            >Your Address<input
+              type="text"
+              name="address"
+              id="address"
+              placeholder="1137 Williams Avenue"
+            /></label
+          >
+          <label for="zip" class="grid grid-cols-1 gap-[0.56rem]"
+            >ZIP Code<input
+              type="text"
+              name="zip"
+              id="zip"
+              placeholder="10001"
+            /></label
+          >
+          <label for="city" class="grid grid-cols-1 gap-[0.56rem]"
+            >City<input
+              type="text"
+              name="city"
+              id="city"
+              placeholder="New York"
+            /></label
+          >
+          <label for="country" class="grid grid-cols-1 gap-[0.56rem]"
+            >Country<input
+              type="text"
+              name="country"
+              id="country"
+              placeholder="United States"
+            /></label
+          >
+        </form>
+      </div>
+      <div class="">
+        <h3
+          class="text-sm font-bold uppercase leading-[1.5625rem] tracking-[0.05806rem] text-[#D87D4A]"
+        >
+          payment details
+        </h3>
+        <h4 class="">Payment Method</h4>
+        <form action="" method="get" class="grid grid-cols-1 gap-6">
+          <label for="emony" class="">
+            <input type="radio" name="e-mony" id="e-mony" value="e-Money" />
+            e-Money
+          </label>
+          <label for="cash" class="">
+            <input
+              type="radio"
+              name="cash"
+              id="cash"
+              value="Cash on Delivery"
+            />
+            Cash on Delivery
+          </label>
+          <label for="e-money_number" class="grid grid-cols-1 gap-[0.56rem]"
+            >e-Money Number<input
+              type="text"
+              name="e-money_number"
+              id="e-money_number"
+              placeholder="238521993"
+            /></label
+          >
+          <label for="e-money_pin" class="grid grid-cols-1 gap-[0.56rem]"
+            >e-Money PIN<input
+              type="text"
+              name="e-money_pin"
+              id="e-money_pin"
+              placeholder="6891"
+            /></label
+          >
+        </form>
+      </div>
+    </section>
+  </main>
+  <!-- Footer -->
+  <Footer />
+</Layout>
